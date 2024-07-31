@@ -26,8 +26,10 @@ body{
 
 .logo{
     position: relative;
-    font-size: 25px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
+    padding-left: 2cm;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -35,7 +37,11 @@ body{
     opacity: 0;
     animation: slideRight 1s ease forwards;
 }
-.logo span{
+ .logo:hover{
+    font-size:23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo span{ 
     color: #0ef;
 }
 .navbar a{
@@ -71,8 +77,23 @@ body{
 
 .home-content {
     max-width: 600px;
+    padding-left: 2cm;
 }
-
+.img:hover{
+    box-shadow: 0 0 50px #0ef,
+    0 0 30px #0ef;
+}
+.img{
+    border-radius: 50%;
+    box-shadow: 0 0 20px #0ef,
+    0 0 30px #0ef;
+}
+.img img{
+ 
+    max-width: 450px;
+    height: auto;
+    width: 100%
+}
 
 .home-content h3{
     font-size: 32px;
@@ -172,8 +193,12 @@ body{
     width: 100%
 }
 
+.about-text {
+    padding-left: 2cm;
+}
+
 .about-text h2{
-    font-size: 50px;
+    font-size: 45px;
 }
 .about-text h2 span{
     color: #0ef;
@@ -270,11 +295,12 @@ section{
     display: flex;
     flex-wrap: wrap;
 }
-.container1{
+
+.container1 {
     width: 500px;
-    height: 300px;
-    padding: 60px 80px;
-    margin-left: 120px;
+    max-height: 500px;
+    padding: 10px;
+    margin-left: 100px;
 }
 .heading1{
     text-align: center;
@@ -284,7 +310,7 @@ section{
     margin-bottom: 50px;
 }
 .bar{
-    font-size: 23px;
+    font-size: 25px;
 }
 .Technical-bars .bar{
     margin-top: 40px 0;
@@ -398,7 +424,7 @@ section{
 }
 .radial-bars .radial-bar{
     width: 50%;
-    height: 170px;
+    height: 200px;
     margin-bottom: 10px;
     position: relative;
 }
@@ -482,8 +508,8 @@ section{
     opacity: 0;
 } 
 .main-text{
-    padding-top: 80px;
-    margin-top: 250px;
+    padding-top: 15px;
+    margin-top: 100px;
 }
 .main-text h2{
     font-size: 40px;
@@ -858,7 +884,7 @@ section{
     }
 
     /*skills*/
-    .subtitle{
+    .sub-title{
         font-size: 50px;
         text-align: center;
     }
@@ -867,12 +893,6 @@ section{
         max-height: 500px;
         padding: 20px;
         margin-left: 50px;
-    }
-    .container2 {
-        width: 600px;
-        max-height: 500px;
-        padding: 10px;
-        margin-left: 0px;
     }
     .bar .info .addhtml::before{
         content: "90%";
